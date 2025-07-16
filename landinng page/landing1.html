@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Internships - High Tech Software House</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgb(202, 169, 202);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+
+    nav ul li a:hover {
+      background-color: #007BFF;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      height: 100vh;
+      background: url(images/busy-businesswoman-with-digital-devices.jpg) no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero-wrapper {
+      background-color: rgba(245, 212, 212, 0.9);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 800px;
+    }
+
+    .hero-section h1 {
+      font-size: 2.5rem;
+      color: indianred;
+    }
+
+    .hero-section p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .apply-btn {
+      background-color: lightcoral;
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .apply-btn:hover {
+      background-color: lightpink;
+    }
+
+    /* Benefits Section */
+    .benefits-section {
+      padding: 60px 20px;
+      background-color: rgb(245, 212, 212);
+      text-align: center;
+    }
+
+    .benefits-section h2 {
+      font-size: 2rem;
+      color: indianred;
+      margin-bottom: 20px;
+    }
+
+    .benefits-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .benefit-item {
+      flex: 1 1 300px;
+      background: palevioletred;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .benefit-item img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .benefit-item h3 {
+      margin: 15px 0 10px;
+      font-size: 1.3rem;
+    }
+
+    .benefit-item p {
+      font-size: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background-color: rgb(238, 215, 215);
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      margin-top: 20px;
+      background-color: lightpink;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: lightcoral;
+    }
+
+    /* Scroll Button */
+    .scroll-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: darksalmon;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px 15px;
+      font-size: 20px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .scroll-btn:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .hero-section {
+        height: auto;
+        padding: 60px 20px;
+        text-align: left;
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+      }
+
+      .benefits-list {
+        flex-direction: column;
+      }
+
+      .benefit-item {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero-section">
+  <div class="hero-wrapper">
+    <h1>Start My Remote Internship Journey</h1>
+    <p>Through this internship, I’ve gained real-world experience and learned how to manage tasks during flexible hours. Despite some challenges like electricity and network issues, the support from my mentor helped me grow. I’ve learned how to create website designs and improve my thinking for remote projects at HIGH TECH Software House, Nawabshah.</p>
+    <a href="#" class="apply-btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- Benefits -->
+<section id="benefits" class="benefits-section">
+  <h2>Why Choose Our Remote Internships?</h2>
+  <p>At home, I wanted to do something meaningful, and this remote internship helped me gain both knowledge and skills.</p>
+  <div class="benefits-list">
+    <div class="benefit-item">
+      <img src="images/flexible.jpg" alt="Flexible Timings">
+      <h3>Flexible Timings</h3>
+      <p>Choose shifts that suit you—whether part-time, evening, or weekends (Sunday is off at HIGH TECH).</p>
+    </div>
+    <div class="benefit-item">
+      <img src="images/project.jpg" alt="Real Project Experience">
+      <h3>Real Project Experience</h3>
+      <p>Work on real-world tasks during your shift, including responsive design, layouts, and practical assignments.</p>
+    </div>
+    <div class="benefit-item">
+      <img src="images/certificate.png" alt="Certificate on Completion">
+      <h3>Certificate on Completion</h3>
+      <p>Get certified for your efforts—great for your resume and future career in software companies or tech firms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- Scroll Button -->
+<button id="scrollToTopBtn" class="scroll-btn">↑</button>
+
+<script>
+  // Scroll button logic
+  const scrollBtn = document.getElementById("scrollToTopBtn");
+  window.onscroll = () => {
+    scrollBtn.style.display = window.scrollY > 200 ? "block" : "none";
+  };
+  scrollBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+
+</body>
+</html>
