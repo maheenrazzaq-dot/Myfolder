@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Internship Program</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: rgb(226, 231, 240);
+    }
+
+    header {
+      background: rgb(112, 133, 160);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background: lightsteelblue;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    .hero button {
+      background: white;
+      color: #4a90e2;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      margin-top: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .hero button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      background-color: rgb(226, 231, 240);
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    .section p,
+    .section ul {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    ul p {
+      font-weight: normal;
+      margin-left: 15px;
+    }
+
+    footer {
+      background: rgb(112, 133, 160);
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    /* Responsive Breakpoints */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        margin: 10px;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .section {
+        padding: 30px 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      .hero h2 {
+        font-size: 1.25rem;
+      }
+
+      .hero button {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <i><h1>Remote Internship Program</h1></i>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Apply</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Join Our Remote Internship Program!</h2>
+    <p>Learn by working on real projects.</p>
+    <button>Apply Now</button>
+  </section>
+
+  <!-- About and Benefits Section -->
+  <section class="section about">
+    <i><u><h2>About:</h2></u></i>
+    <p>A remote internship is a work experience opportunity that allows individuals to gain professional skills and experience from a distance, often through digital communication tools and online collaboration platforms. These internships typically involve tasks such as research, writing, data analysis, or digital marketing, depending on the field. Remote internships help participants develop essential time management, communication, and technical skills while offering valuable exposure to the global job market.</p>
+
+    <i><u><h2>Benefits:</h2></u></i>
+    <ul>
+      <li>Flexible Hours:</li>
+      <p>Flexible hours allow interns to manage their time effectively, balancing their internship with studies, part-time jobs, or personal responsibilities. Interns can work during their most productive hours, leading to better performance and output. Time flexibility makes it easier to work with international teams across different time zones.</p>
+
+      <li>Real Projects:</li>
+      <p>Working on real projects provides hands-on experience and helps interns apply theoretical knowledge in real-world scenarios. Interns gain valuable technical and soft skills that are directly relevant to their field of study or career goals. Completing real tasks and contributing to actual outcomes gives interns concrete examples of work to showcase in their portfolios or resumes.</p>
+
+      <li>Certificate of Completion:</li>
+      <p>A certificate adds credibility and demonstrates that the intern has completed structured training and contributed meaningfully. It serves as official proof of experience, which can be helpful when applying for jobs or further education. Receiving a certificate can be motivating, acknowledging the intern’s hard work and commitment throughout the internship.</p>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: intern@remoteprogram.com</p>
+    <p>&copy; 2025 Remote Internship Program</p>
+  </footer>
+
+</body>
+</html>
