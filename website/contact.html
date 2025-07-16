@@ -1,0 +1,79 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Internship Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pic1">
+  <nav class="bar1">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <div id="nameError" class="error"></div>
+
+      <input type="email" id="email" placeholder="Your Email">
+      <div id="emailError" class="error"></div>
+
+      <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+      <div id="messageError" class="error"></div>
+
+      <button type="submit">Submit</button>
+      <div id="successMessage" class="success"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let isValid = true;
+
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const messageError = document.getElementById("messageError");
+      const successMessage = document.getElementById("successMessage");
+
+      nameError.textContent = "";
+      emailError.textContent = "";
+      messageError.textContent = "";
+      successMessage.textContent = "";
+
+      if (name.value.trim() === "") {
+        nameError.textContent = "Please enter your name.";
+        isValid = false;
+      }
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.value.match(emailPattern)) {
+        emailError.textContent = "Please enter a valid email.";
+        isValid = false;
+      }
+
+      if (message.value.trim() === "") {
+        messageError.textContent = "Please enter your message.";
+        isValid = false;
+      }
+
+      if (isValid) {
+        successMessage.textContent = "Message sent successfully!";
+        name.value = "";
+        email.value = "";
+        message.value = "";
+      }
+    });
+  </script>
+</body>
+</html>

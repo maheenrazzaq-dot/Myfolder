@@ -1,0 +1,179 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    padding: 0 1rem;
+    background-color: #f4f4f4;
+    background-image: url(image/representations-user-experience-interface-design.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+  .pic{
+    /* padding: 0 1rem; */
+    background-color: #f4f4f4;
+    background-image: url(image/elevated-view-businesspeople-using-laptop-digital-tablet.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 20vh; */
+  }
+  .bar{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none; 
+  }
+  .container1{
+    background-color: rgb(222, 235, 243);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* gap: 700px; */
+}
+.pic1{
+  /* padding: 0 1rem; */
+  background-color: #f4f4f4;
+  background-image: url(image/anonymous-woman-showing-laptop-colleagues.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 20vh; */
+}
+.bar1{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none; 
+}
+.logo > img{
+    width: 80px;
+    height: 60px; 
+    padding-top:10px;
+    padding-right: 10px;
+    margin-right: 700px;
+
+}
+
+.container1 .links > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none; 
+    color: darkgreen;
+    
+}
+.button{
+  padding: 10px 15px;
+  border: 10vh;
+  border-color:black;
+  font-weight: 600;
+  border-radius: 5vh;
+  background-color: lightblue;
+  margin: 20px;
+  width: 100px;
+}
+  /* nav {
+    background-color: lemonchiffon;
+    padding: 1rem;
+    text-align: center;
+    gap: 10px;
+    padding-bottom: 20px
+  }
+  
+  nav a {
+    color: ;
+    padding-right:50px ;
+    text-decoration: none;
+  }
+  .text{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  } */
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: lightcyan ;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1, h2 {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 0.7rem 1.5rem;
+    background: lightblue;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: lightskyblue;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  
+  .success {
+    color: green;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Scroll-to-top button */
+  #topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      font-size: 0.9rem;
+    }
+  
+    .container {
+      margin: 1rem auto;
+    }
+  }
+  
