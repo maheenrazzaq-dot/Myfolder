@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll to top button -->
+  <button onclick="scrollToTop()" id="topBtn">↑</button>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Hi There</h1>
+      <h1> I am Maheen Shaikh</h1>
+      <p>Web Developer Intern</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <li><a href="#projects">Projects</a></li>
+      <img src="images/girl image.jpg" alt="Profile Picture" />
+      <p>I am Maheen . I am a student of BSCS for GCUH.I am a web developer also i have other skills.My experience is good on frontend development.Also some knowledge about backend or javascript.Also my experience is good in web designing,such as cards,webpages etc. I have knowlege about database , operating system or other activities.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="fade-out">
+    <div class="container">
+      <h2>Projects</h2>
+      <li><a href="#contact">Contact</a></li>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>A responsive website built with HTML, CSS, and JS.</p>
+          <a href="contact.html">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>A card site showcasing web development skills.</p>
+          <a href="card.html">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Project Three</h3>
+          <p>A simple JavaScript game for fun learning.</p>
+          <a href="simplejs.html">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="fade-left">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <li><a href="#about">About</a></li>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <span id="nameError" class="error"></span>
+
+        <input type="email" id="email" placeholder="Your Email" required />
+        <span id="emailError" class="error"></span>
+
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <span id="messageError" class="error"></span>
+
+        <button type="submit">Send Message</button>
+        <p id="successMessage" class="success"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 maheenrazzaq69@gmail.com. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
