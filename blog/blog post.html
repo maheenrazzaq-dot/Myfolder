@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Post</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: lightseagreen;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+      color: whitesmoke;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    main {
+      flex: 3;
+      background: rgb(246, 250, 252);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    aside {
+      flex: 1;
+      background: rgb(246, 250, 252);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .post-title {
+      font-size: 2.5rem;
+      color: darkcyan;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .featured-image {
+      width: 80%;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .post-content p {
+      margin-bottom: 16px;
+      font-size: 1rem;
+    }
+
+    .share {
+      margin-top: 20px;
+    }
+
+    .share a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #0077cc;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .recent-posts ul {
+      list-style: none;
+    }
+
+    .recent-posts ul li a {
+      text-decoration: none;
+      color: #0077cc;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .comment-section {
+      margin-top: 40px;
+    }
+
+    .comment-section h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: rgb(2, 80, 80);
+    }
+
+    .comment-section form input,
+    .comment-section form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .comment-section button {
+      padding: 10px 20px;
+      background-color:darkcyan;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .comment-section button:hover {
+      padding: 10px 20px;
+      background-color:rgb(161, 218, 218);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #commentSuccess {
+      color: green;
+      margin-top: 10px;
+      display: none;
+    }
+
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #386c91;
+      color: #fff;
+      padding: 10px 14px;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .post-title {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <u><h1>My Remote Internship Blog</h1></u></div>
+  </header>
+
+  <div class="container">
+    <!-- Main Content -->
+    <main>
+      <i><h2 class="post-title">How Remote Work is Changing the Future</h2></i>
+      <i><p class="meta">Published on July 15, 2025 | By Maheen on Remote Internship Portal</p></i>
+      <img src="Images/remote work.png" alt="Remote Work Illustration" class="featured-image">
+
+      <div class="post-content">
+        <p>Remote internships are transforming how students and young professionals kickstart their careers. No longer limited by location or travel costs, interns can now work with companies from anywhere in the world. This shift is making internships more inclusive, flexible, and accessible  offering valuable experience without the need to step into a physical office.</p>
+        <p>Beyond just learning technical skills, remote interns are building essential abilities like time management, communication, and independence. They’re becoming comfortable with tools like Zoom and Slack  the same platforms used in full-time roles across the globe. With flexible schedules and the freedom to work in ways that suit them best, interns are more productive, confident, and career ready than ever before.</p>
+        <p>These internships are preparing a new generation for a digital first future. They’re not just a temporary solution  they’re shaping the way we learn, grow, and work moving forward.</p>
+      </div>
+
+      <div class="share">
+        <p>Share this post:</p>
+        <a href="#">🔗 Facebook</a>
+        <a href="#">🐦 Twitter</a>
+        <a href="#">💼 LinkedIn</a>
+      </div>
+
+      <!-- Updated Comment Section -->
+      <div class="comment-section">
+        <h3>Any Comment</h3>
+        <form id="commentForm">
+          <textarea id="comment" name="comment" rows="5" placeholder="Your Comment" required></textarea>
+          <button type="submit">Submit</button>
+          <div id="commentSuccess">✅ Thank you! Your comment has been received.</div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+      </div>
+
+      <div class="recent-posts">
+        <h3>Recent Posts</h3>
+        <ul>
+          <li><a href="#">Top 5 Tools for Remote Teams</a></li>
+          <li><a href="#">Managing Time Zones Effectively</a></li>
+          <li><a href="#">Best Practices for Virtual Meetings</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script>
+    // Scroll-to-top functionality
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Comment form handling
+    const commentForm = document.getElementById("commentForm");
+    const successMsg = document.getElementById("commentSuccess");
+
+    commentForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      commentForm.reset();
+      successMsg.style.display = "block";
+      setTimeout(() => {
+        successMsg.style.display = "none";
+      }, 4000);
+    });
+  </script>
+
+</body>
+</html>
