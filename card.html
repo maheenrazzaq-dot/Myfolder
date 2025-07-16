@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1">
+    <title>Responsive Form</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="card.css">
+</head>
+<style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: lightsteelblue;
+    background-size: 1500px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  /* Profile card container */
+  .card {
+    /* padding: 100px 100px; */
+    border-radius: 16px;
+    text-align: center;
+    max-width: 360px;
+    width: 350%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgb(98, 98, 134);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    padding-left: 50px;
+    margin-top: 50px;
+    /* padding-bottom: 10px; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(105, 86, 86, 0.2);
+    /* box-sizing: content-box; */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Profile image */
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    border: 4px solid #eaeaea;
+  }
+  
+  /* Text content */
+  .card .title .bio  {
+    font-size: 1.5rem;
+    color: #333;
+    align-items: center;
+  }
+  
+  .title {
+    color: lightyellow;
+    font-size: 0.95rem;
+    margin: 8px 0 15px;
+  }
+  
+  .bio {
+    color: lemonchiffon;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  
+  /* Social icons */
+  /* .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+  }
+  .icon{
+      height: ;
+  } */
+  .container1{
+      border-radius: 80px;
+      /* background-color: lightcyan; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      width: 250px;
+      padding-bottom: 5px;
+    }
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(5, 5, 5, 0.15);
+      }
+    .box{
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+    }
+    
+  .box > img{
+      color: white;
+      height: 30px;
+      width: 30px;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 400px) {
+    .card {
+      padding: 25px 15px;
+    }
+  
+    .bio {
+      font-size: 0.85rem;
+    }
+  }
+</style>
+<body class="container">
+    <div class="card1">
+  <div class="card">
+    <img src="Images/girl.jpg" alt="Profile Picture" class="profile-img" />
+    <h1>MAHEEN SHAIKH</h1>
+    <u><h2 class="title">Frontend Developer</h2></u>
+    <u><p class="bio">
+      I am a frontend developer.I have experience about web designing.I hope you like it my designs. 
+    </p></u> 
+    <div class="container1">
+        <div class="box">
+            <img src="Images/facebook.png" alt="">
+          </div>
+          <div class="box">
+            <img src="Images/github2.png" alt="">
+          </div>
+          <div class="box">
+            <img src="Images/linkdin.png" alt="">
+          </div>
+          <div class="box">
+            <img src="Images/twitter.png" alt="">
+          </div>
+    </div>
+  </div>
+    </div>
+</body>
+</html>
